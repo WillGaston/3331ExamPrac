@@ -1,0 +1,71 @@
+
+
+Q1 . A router performs routing when a data packet arrives. True or False?
+False - routing is part of the control plane not the data plane
+
+Q2 . When a packet arrives, a router performs forwarding. True or False?
+True
+
+Q3 . To perform forwarding, a router needs to perform routing first. True or False?
+True
+
+Q4 . To perform forwarding, a router must inspect the source address in the arriving packet's header. True or False?
+False
+
+Q5 . IP packet fragmentation:
+A. helps speed up data delivery in the Internet
+B. cannot be avoided
+C. can be avoided by controlling TCP segment size based on path MTU discovery <----
+D. can be avoided by configuring the maximum transfer unit (MTU) of the underlying link layer.
+
+Q6 . Each network interface of a host must be configured with an IP address. True or False?
+True - IP addresses are used to identify a host
+
+Q7 . Two hosts connected to the same subnet can reach each other without the help of a router. True or False?
+True
+
+Q8 . In the original "classful" addressing scheme, the network address part of the 32-bit IP address could have a maximum of:
+A. 8 bits <--- prior to classa-e
+B. 10 bits
+C. 16 bits
+D. 24 bits <--- (Class C)
+
+Q9 . In today's CIDR addressing scheme, the subnet part of the 32-bit IP address:
+A. can only have 24 bits
+B. must be at least 8 bits long
+C. can have a maximum length of 28 bits
+D. can have any arbitrary length (<= 32 bit) <-----
+
+Q10 . CIDR addressing scheme could work without the help of subnet masks. True or False?
+FALSE
+
+Q11 . How many IP addresses belong to the subnet 128.119.254.0/26?
+A.16
+B. 32
+C. 64 <<<----
+D. 128
+
+Q12 . What are the IP addresses at the two end-points of the subnet 128.119.254.0/26?
+A. 128.119.254.0 and 128.119.254.63 <<<,------
+B. 128.119.254.0 and 128.119.254.128
+C. 128.119.254.63 and 128.119.254.128
+D. 128.119.254.0 and 128.119.254.64
+
+Q13 . Without DHCP, a host cannot be configured with an IP address. True or False?
+False - if it is not a part of a subnet and only contains a single host then DHCP is not needed
+
+Q14 . From the IP address, one can guess the geographic location of the device. True or False?
+True
+
+Q15 . The two subnets 128.119.245.128/25 and 128.119.245.0/26 have overlapping IP addresses. True or False?
+false
+
+Q16 . One of the advantages of NAT is that the organisation can change the addresses of the devices within its local network
+without notifying the outside world. True or False?
+True
+
+Q17 . NAT violates the layering principle. True or False?
+True - needs to go to IP layer from link layer
+
+Q18 . For NAT to work, we need at least two public IP addresses. True or False?
+False - NAT translates public IP address + port --> private IP address + port
