@@ -1,0 +1,33 @@
+
+Q1 . A Border Router is connected to more than one ISP. True or False?
+True
+
+Q2 . Each ISP must run intra-domain routing protocols to route packets within its domain. True or False?
+True
+
+Q3 . In graph abstraction of communication networks, edges represent routers. True or False?
+False
+
+Q4 . In graph representation of communication networks, all links must have identical costs/weights. True or False?
+False
+
+Q5 . The shortest path represents the path with the minimum number of hops:
+A. when all links have equal cost <----
+B. in any communication networks
+C. when each hop has at least 1 ms of delay at minimum
+D. when most hops are heavily loaded
+
+Q6 . In link state routing, routers must flood the network with any changes in its links. True or False?
+True
+
+Q7 . Distance Vector scales better than Link State because it generally exchanges smaller size update packets with its neighbours. True or False?
+True
+
+Q8 . With Distance Vector routing, each router must have the knowledge of the complete network topology. True or False?
+False
+
+Q9 . For a network with 10 routers, the loop in Dijkstra's algorithm will be executed:
+A.only once
+B.9 times <---
+C.10 times
+D.11 times
