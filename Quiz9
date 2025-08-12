@@ -1,0 +1,44 @@
+ Q1 . LAN address is also known as:
+A. TCP address
+B. IP address
+C. MAC address <-====
+D. Virtual address
+
+Q2 . LAN address is usually written in:
+A. Hexadecimal notation <=====
+B. Binary notation
+C. Decimal notation
+D. in words
+
+Q3 . ARP is used to resolve:
+A. the IP address of a domain name
+B. the next-hop address for an arriving packet
+C. the associated LAN address of an IP address <-====
+D. the associated IP address of a LAN address
+
+Q4 . A network admin is needed to configure an ARP table. True or False?
+False - they are created on demand
+
+Q5 . Which of the following is an example of link-layer protocol?
+A. RIP
+B. OSPF
+C. Ethernet <====
+D. TCP
+
+Q6 . One of the advantages of using bus-based Ethernet is that collisions can be completely avoided. True or False?
+False - buses actually have the opposite - contention is high compared to coaxial cables
+
+Q7 . Switching tables in LAN switches are typically configured by a network admin. True or False?
+False
+
+Q8 . In a LAN switch, packets:
+A. are never flooded
+B. are always flooded
+C. can be flooded sometimes <====
+D. are flooded only when reliable service is required.
+
+Q9 . If a LAN switch has flooded a packet, it means the switch did not know which LAN segment the packet came from. True or False?
+Fasle
+
+Q10 . If a LAN switch has flooded a packet, it means the switch did not know which LAN segment the packet destination is connected to. True or False? 
+True
