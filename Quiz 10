@@ -1,0 +1,48 @@
+
+Q1. Message Integrity ensures that only the sender and the receiver understands the content of the message. True or False?
+False
+
+Q2. Endpoint authentication ensures that only the sender and the receiver understands the content of the message. True or False?
+False
+
+Q3. The aim of encryption is to hide the plain text as well as the encryption algorithm from intruders. True or False?
+False - key secrecy, not algorithm secrecy
+
+Q4. Symmetric key encryption uses identical keys at both the communicating parties. True or False?
+True
+
+Q5. We use Cipher Block Chaining (CBC) to
+a. Reduce the overhead associated with sending random bits along with ciphertext <====
+b. Make the encryption more secure 
+c. Hide the random bits used in the process of encryption
+d. None of the above
+
+Q6. An attacker launching a brute force attack on an N-bit block cipher in the worst case will have to try out how many combinations?
+a. 2^N <====
+b. N!
+c. (2^N)!
+d. (N!)^2
+
+Q7. AES is an example of
+a. Symmetric key cryptography <====
+b. Public key cryptography
+c. Hybrid key cryptography
+d. None of the above
+
+Q8. Suppose Alice is using public-key cryptography whereby Alice uses Bob's public key to encrypt her messages for Bob. What is being achieved?
+a. Message Integrity
+b. Sender Authentication
+c. Both a and b
+d. None of above <===
+
+Q9. If you want to send only a short message to your peer, what type of encryption technique would be more efficient?
+a. Symmetric key cryptography with an appropriate key exchange mechanism
+b. Public key cryptography <===
+c. Hybrid key cryptography
+d. None of the above
+
+Q10. A digital signature provides
+a. Confidentiality
+b. Message integrity & Non-repudiation <===
+c. Message integrity only
+d. None of the above 
