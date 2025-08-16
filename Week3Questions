@@ -1,0 +1,80 @@
+Q1) Why is SMTP not used for transferring e-mail messages from the recipient’s mail
+server to the recipient’s personal computer?
+SMTP is a push-protocol with the purpose of sending email messages between mail servers. It does not send to a recipient's personal computer as it instead gets pushed to their mail server. 
+This is because email agents are distributed and a single user may access their emails from multiple sources and devices.
+
+Q2) Why do you think DNS uses UDP, instead of TCP, for its query and response
+messages?
+The main concern with DNS is that it has an extremely fast query resolution time. This need for reduced latency lends towards UDP rather than TCP as it does not have the overhead of setting up and using connections and does not need to perform additional reliability checks.
+
+Q3) Suppose you are sending an email from your Hotmail account to your friend,
+who reads his/her e-mail from his/her mail server using IMAP. Briefly describe how
+your email travels from your host to your friend’s host. Also, what are the
+application-layer protocols involved?
+
+Hotmail --> my mail server : uses HTTPS (as hotmail is a web-based application) to send email to my outgoing mail queue
+my mail server --> friend's mail server : SMTP would push the email from my outgoing mail queue to my friend's mail server inbox.
+friend's mail server --> friend's host : IMAP
+
+Q4) How can iterated DNS queries improve the overall performance?
+iterative DNS queries place the burden of resolution on the local DNS server rather than each successive server in the resolution chain. Iterative resolution is more efficient as it does not make each dns server perform nested queries - this is what occurs in recursive 
+DNS resolution and decreases the bandwidth of the DNS server to resolve the queries of other users. However, iterative DNS has a fixed load, and thus can bear to load of repeated queries through sufficient load balancing ahead of time thus improving overall performance.
+
+Q5) Suppose you needed to use HTTP to download a web page with three embedded
+images. Draw diagrams, similar to those from the lecture slides, depicting the main
+interactions between the client and server when using non-persistent HTTP, persistent
+HTTP without pipelining, and persistent HTTP with pipelining.
+
+Q6) Suppose within your Web browser you click on a link to obtain a web page. The
+IP address for the associated URL is not cached in your local host, so a DNS look-up
+is necessary to obtain the IP address. Suppose that n DNS servers are visited before
+your host receives the IP address from DNS and that iterative queries are used. Let the
+successive visits to the DNS servers incur an RTT of RTT1, ....., RTTn. Further
+suppose that the web page associated with the link contains exactly one object,
+consisting of a small amount of HTML text. Let RTT0 denote the RTT between the
+local host and the server containing the object. Assuming zero transmission time of
+the object, how much time elapses from when the client clicks on the link until the
+client receives the object? (EXAM PROBLEM FROM PAST SESSIONS)
+
+Sum(RTT0 + ... RTTn)
+
+Q8) Consider a new peer Alice that joins BitTorrent without possessing any chunks.
+Without any chunks, she cannot become a top-four uploader for any of the peers,
+since she has nothing to upload. How then will Alice get her first chunk?
+
+She will need to wait until she is optimistically unchoked by another member of the BitTorrent 
+
+Q9) Consider distributing a file of F = 10 Gbits to N peers. The server has an upload
+rate of us = 20Mbps, and each peer has a download rate of di = 1 Mbps and an upload
+COMP 3331/9331 Computer Networks and Applications
+rate of u. For N=10, 100 and 1000 and u = 200Kbps, 600 Kbps and 1 Mbps, prepare a
+chart giving the minimum distribution time for each of the combinations of N and u
+for both client-server distribution and P2P distribution.
+
+
+A) In the lecture we solved a problem, which involved finding the total delay incurred
+in downloading objects assuming that the web cache hit ratio was 40%. Now assume
+that the cache hit rate is 50% (i.e. 50% of the requests are satisfied locally from the
+web cache). The rest of the parameters are the same as in that problem. The average
+delay to download the objects is:
+(i) between 1.2 and 1.3 seconds
+(ii) greater than two seconds
+(iii) between 1.0 and 1.1 seconds
+(iv) none of the above
+
+B) Suppose a client sends an HTTP request message with the If-modified-since:
+header. Suppose the object in the server has not changed since the last time that client
+retrieved the object. Then the server will send a response message with the status
+code:
+(i) 304 Not Modified <====
+(ii) 404 Not Found
+(iii) 200 OK
+(iv) 403 Permission Denied
+
+C) HTTP request and response messages are not humanly readable
+(i) True
+(ii) False <===
+
+D) All SMTP e-mail messages must be in 8-bit ASCII
+(i) True <===
+(ii) False
