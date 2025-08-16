@@ -1,0 +1,47 @@
+ Q1 . If a local name server has no clue about where to find the address for a hostname, then ____ (complete the sentence)
+A. Server asks its adjacent name server
+B. Server asks its root name server <====
+C. Request is not processed
+D. Server explodes
+
+Q2 . Which of the following is an example of a top-level domain?
+A. yoda.jedi.starwars.com
+B. jedi.starwars.com
+C. starwars.com
+D. .com <=========
+
+Q3 . A web browser needs to contact www.cse.unsw.edu.au . The minimum number of DNS requests sent is:
+A. 0 <======== if in local cache
+B. 1
+C. 2
+D. 3
+
+Q4 . The role of the CDN provider’s authoritative DNS name server in a content distribution network basically is:
+A. to provide an alias address for each browser access to the “origin server” of a CDN website
+B. to map the query for each CDN object to the CDN server closest to the requestor (browser) <=========
+C. to provide a mechanism for CDN “origin servers” to provide paths for clients (browsers)
+D. none of the above CDN networks do not use DNS
+
+Q5 . When web-based email is used, two mail servers communicate using HTTP. True or False?
+False, they use SMTP
+
+Q6 . P2P networks must have servers to help new peers find other peers. True or False?
+False, not necessarilly
+
+Q7 . P2P networks must maintain trackers to help new peers join the network. True or False?
+False, don't explicitly need trackers
+
+Q8 . The 'rarest first' is a P2P networking policy to select
+A. the next peer to download chunks from
+B. the next chunk to download <======
+C. the tracker to query for other peers
+D. the file to download
+
+Q9 .The 'rarest first' policy helps
+A. download precious files
+B. download chunks that no other peers have
+C. duplicate chunks in the P2P network so even if a peer disappears, other peers will contain the chunks <=========
+D. remove chunks from the network that are rarely used
+
+Q10 . In BitTorrent, Peer A will never send chunks to Peer B if Peer B is not in Peer A's top 4 list. True or False? 
+False, optimistic unchoking
