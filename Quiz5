@@ -1,0 +1,29 @@
+ Q1 . TCP receiver may intentionally delay the acknowledgement of a correctly received packet. True or False?
+True - if congestion
+
+Q2 . A TCP receiver receives an in-order segment with an expected sequence number, but it has one other segment with pending ACK. Which of the following is a possible action for this receiver if it is using the delayed ACK mechanism?
+A. It sends 2 ACKs one after the other
+B. It sends 3 ACKs one after the other
+C. It sends one cumulative ACK acknowledging both segments <====
+D. It sends a Duplicate ACK.
+
+Q3 . TCP is never allowed to retransmit unless there is a timeout. True or False?
+False - fast retransmit after 3 dup ack
+
+Q4 . During slow start, congestion window increases:
+A. Linearly
+B. Exponentially <===
+C. Logarithmically
+D. Does not grow
+
+Q5 . Maximum segment size (MSS) refers to the number of bytes in a TCP segment including its header. True or False?
+False - doesn't include header
+
+Q6 . A TCP connection is using an MSS=1460 byte. At the start of the slow start phase, how many bytes the TCP sender can transmit without having to wait for ACK?
+A.1400
+B. 1460 <==
+C.1500
+D. 3000
+
+Q7 . A TCP sender could still reduce its window size even if there was no triple duplicate ACK or timeout. True or False?
+True
