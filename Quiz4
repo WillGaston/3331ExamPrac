@@ -1,0 +1,35 @@
+Q1 . A transport layer protocol implements a timer to address the loss problem. The timer cannot expire if there is no loss. True or False?
+False - could just be delayed
+
+Q2 . A reliable transport protocol must implement both ACK and NAK if it wants to address bit errors as well as packet loss problems. True or False?
+False - see rdt2.2
+
+Q3 . Stop-and-Wait:
+A. receiver buffers packets
+B. has only 1 bit for the sequence number <===
+C. requires a large sequence number space
+D. requires more than 1 bit for the sequence number
+
+Q4 . Stop-and-Wait cannot provide reliability. True or False?
+False
+
+Q5 . For short distances, Stop-and-Wait is always efficient, but it fails to support high throughput only when the distance between the client and server is large. True or False?
+True
+
+Q6 . Pipelining increases throughput (compared to stop-and-wait) linearly with the window size (number packets the sender can have in the pipeline without having to stop and wait for the ACK). True or False?
+True
+
+Q7 . In Go-Back-N, the sender window cannot be equal to the sequence number space. True or False?
+True
+
+Q8 . For a 4-bit sequence number field in the packet header, the maximum possible window size for Selective Repeat is
+A.15
+B.16
+C. 8 <===
+D. 7
+
+Q9 . To speed up file transfers, a Selective Repeat implementation is using a window size of 8. The sequence number field in the packet header must be at least
+A. 8-bit long
+B. 4-bit long <====
+C. 3-bit long
+D. 16-bit long
